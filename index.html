@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius || Explore more in DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header></header>
+    <main class="container mx-auto mt-10">
+        <div class="w-full h-full flex gap-4">
+            <div class="flex-1  grid grid-cols-1 lg:grid-cols-3  gap-4">
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-10 pt-10 flex justify-center items-center">
+                        <img src="images/triangle.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 × b × h</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input id="input-1" placeholder="b"
+                                    class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2" type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input id="input-2" placeholder="h"
+                                    class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm " type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                            <h1 class="text-lg ">Area:</h1>
+                            <div>
+                                <span id="calculateDisplay"></span>
+                                <span>cm</span><sup>2</sup>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button id="btn1"
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rectangle -->
+
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-10 pt-10  h-[170px] flex items-center justify-center">
+                        <img src="images/rectangle.png" alt="Shoes" class="w-60" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input id="rect-input1" placeholder="w" class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2"
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input id="rect-input2" placeholder="l" class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm "
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button id="rect-btn"
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-8 pt-10 h-[170px] flex items-center">
+                        <img src="images/parallelogram.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = 0.5 × b × h</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input placeholder="b" class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2"
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input placeholder="h" class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm "
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-8 pt-10 h-[170px] flex items-center justify-center">
+                        <img src="images/pentagon.png" alt="Shoes" class="w-36" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 × b × h</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input placeholder="b" class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2"
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input placeholder="h" class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm "
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-8 pt-10 h-[170px] flex items-center justify-center">
+                        <img src="images/rhombus.png" alt="Shoes" class="w-40" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 × b × h</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input placeholder="b" class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2"
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input placeholder="h" class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm "
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-base-100 border border-gray-200 rounded-lg">
+                    <figure class="px-8 pt-10 h-[170px] flex items-center">
+                        <img src="images/ellipse.png" alt="Shoes" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = 0.5 × b × h</p>
+                        <div class="flex gap-4 py-3">
+                            <div class="flex gap-2">
+                                <input placeholder="b" class="w-16 placeholder-slate-600 bg-gray-100 rounded-sm px-2"
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <input placeholder="h" class=" placeholder-slate-600 px-2 w-16 bg-gray-100 rounded-sm "
+                                    type="text">
+                                <p class="font-medium text-slate-600">cm</p>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full px-0">
+                            <button
+                                class="btn hover:bg-[#41a4dd] bg-[#1090D8] w-full font-bold text-base text-white ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-60 border border-gray-200 rounded-md p-2 ">
+                <h2 class="text-base font-semibold text-center">Area Calculation</h2>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
